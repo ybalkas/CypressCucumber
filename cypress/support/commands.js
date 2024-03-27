@@ -31,3 +31,9 @@ Cypress.Commands.add('selectDropDown',(visibleText)=>{
     cy.get('select').select(visibleText).should('have.value', visibleText)
 
 })
+Cypress.Commands.add('loginToTraining',(username,password)=>{
+    cy.get("#ctl00_ContentPlaceHolder1_txtUsername_txtTextBox").type(username)
+    cy.get("#ctl00_ContentPlaceHolder1_txtPassword_txtTextBox").type(password)
+    cy.get('#ctl00_ContentPlaceHolder1_lnkSend').click()
+
+})

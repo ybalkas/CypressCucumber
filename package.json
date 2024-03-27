@@ -19,6 +19,7 @@
   "author": "Yusuf Balkas",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "cypress": "^12.4.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   },
