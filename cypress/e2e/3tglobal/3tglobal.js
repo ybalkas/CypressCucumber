@@ -29,7 +29,7 @@ And("User fills all info to be contacted", () =>
        cy.get('#input_6_8').type(contactFixture.Message);
        cy.selectDropDown('UK')
        cy.get('#input_6_9_1').click()
-       //
+       //Note after that point should be verified by disabling captcha or manually
       })
 });
 
